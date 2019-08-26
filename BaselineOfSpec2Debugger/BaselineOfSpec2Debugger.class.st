@@ -23,5 +23,5 @@ BaselineOfSpec2Debugger >> baseline: spec [
 BaselineOfSpec2Debugger >> newTools: spec [
 
 	spec baseline: 'NewTools' with: [ 
-		spec repository: 'github://dupriezt/NewTools/src' ]
+		spec repository: 'github://dupriezt/NewTools' ]
 ]
