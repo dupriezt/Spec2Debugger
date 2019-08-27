@@ -112,7 +112,7 @@ SpecDebugger class >> logDebuggerStackToFile: aBoolean [
 { #category : #'instance creation' }
 SpecDebugger class >> on: aDebugSession [
 	| sindarinDebugSession returnValue |
-	sindarinDebugSession := SindarinDebugSession forDebugSession: aDebugSession.
+	aDebugSession isSindarinDebugSession ifTrue: [ sindarinDebugSession := aDebugSession ] ifFalse: [	sindarinDebugSession := SindarinDebugSession forDebugSession: aDebugSession. ].
 	[sindarinDebugSession interruptedContext == aDebugSession interruptedContext ] whileFalse: [ sindarinDebugSession stepOver ].
 	returnValue := self basicNew
 		session: sindarinDebugSession;
