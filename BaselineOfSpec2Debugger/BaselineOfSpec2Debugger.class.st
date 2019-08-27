@@ -12,10 +12,10 @@ BaselineOfSpec2Debugger >> baseline: spec [
 		
 		self newTools: spec.
 		spec
-			package: 'Debugger-Commands';
-			package: 'NewTools-Debugger';
-			package: 'NewTools-Debugger-Extensions';
-			package: 'NewTools-Debugger-Tests'
+			package: 'StDebugger-Commands';
+			package: 'StDebugger';
+			package: 'StDebugger-Extensions';
+			package: 'StDebugger-Tests'
 	]
 ]
 
