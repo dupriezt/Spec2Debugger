@@ -25,12 +25,12 @@ SpDynamicToolbarPresenter >> actions [
 
 { #category : #initialization }
 SpDynamicToolbarPresenter >> initializeWidgets [
-	debugCommands := self actions asToolbarPresenter
+	debugCommands := self actions asToolBarPresenter
 ]
 
 { #category : #initialization }
 SpDynamicToolbarPresenter >> refreshWidgets [
-	debugCommands := self actions asToolbarPresenter
+	debugCommands := self actions asToolBarPresenter
 ]
 
 { #category : #'actions lookup' }
